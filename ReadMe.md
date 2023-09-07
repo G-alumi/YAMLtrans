@@ -9,40 +9,40 @@ addons:
     # etc...(key=value)
 
     EmptyImage:
-	  S: image.0.0
-	  SE: image.0.1
-	# etc...(key[subKey]=value)
+      S: image.0.0
+      SE: image.0.1
+    # etc...(key[subKey]=value)
 
-	Constraint:
-	  prev:
-	    - vehicle_1
-	    - vehicle_2
-	    - vehicle_3
-	  next:
-	    - vehicle_1
-	    - vehicle_2
-	    - vehicle_3
-	# etc...(key[subKey][index]=value)
+    Constraint:
+      prev:
+        - vehicle_1
+        - vehicle_2
+        - vehicle_3
+      next:
+        - vehicle_1
+        - vehicle_2
+        - vehicle_3
+    # etc...(key[subKey][index]=value)
 
-	key:
-	  subKey1:
-	  	subKey2:
-			#...
+    key:
+      subKey1:
+        subKey2:
+            #...
     #(key[subKey1][subKey2]...=value)
 
-	key:
-	  -
-	    -
-		  - value_0_0_0
+    key:
+      -
+        -
+          - value_0_0_0
           - value_0_0_1
-		-
-		  - value_0_1_0
-		  - value_0_1_1
-	  -
-	    -
-		  - value_1_0_0
-		    #...
-	#key[index][index][index]...=value
+        -
+          - value_0_1_0
+          - value_0_1_1
+      -
+        -
+          - value_1_0_0
+            #...
+    #key[index][index][index]...=value
 
 params:
   datpath: datfile.dat
