@@ -260,9 +260,12 @@ class YamlTrans:
             
             return result
 
-        result: str = """################################
-#     Converted from yaml      #
-################################
+        result: str = """    ############################
+    #  Converted by YAMLtrans  #
+    ############################
+
+# https://github.com/G-alumi/YAMLtrans
+
 """
         for addon in yamlObj["addons"]:
             for key, value in addon.items():
